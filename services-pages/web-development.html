@@ -1,28 +1,614 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Development - SulTech Solutions</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <title>Web Development Services | SulTech Solutions</title>
+
+  <meta
+    name="description"
+    content="SulTech Solutions builds responsive, modern and user-friendly websites for businesses, organizations and individuals."
+  >
+
+  <meta name="theme-color" content="#07111f">
+
+  <!-- Shared main website CSS -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Shared service pages CSS -->
+  <link rel="stylesheet" href="service-pages.css">
 </head>
-<body>
-<header class="site-header">
-  <nav class="nav container">
-    <div class="brand">SulTech <span class="accent">Solutions</span></div>
-    <a href="index.html" class="btn btn-outline">← Back Home</a>
-  </nav>
-</header>
-<main class="section container">
-  <h1>Web Development</h1>
-  <p>Professional websites and web applications tailored to your business needs.</p>
-  <div class="service-image">
-    <img src="images/WEB DESIGN.jpg" alt="Web Development Image" style="max-width:100%; border-radius:12px; margin-top:20px;">
-  </div>
-</main>
-<footer class="site-footer">
-  <div>© <span id="year"></span> SulTech Solutions</div>
-</footer>
-<script src="script.js"></script>
+
+<body class="it-page">
+
+  <!-- HEADER -->
+  <header class="it-header">
+    <nav class="it-nav">
+      <a href="../index.html" class="it-brand" aria-label="SulTech Solutions home">
+        <span class="it-brand-icon">
+          <icon name="code-2" size="24" />
+        </span>
+        <span>SulTech <span class="it-gradient-text">Solutions</span></span>
+      </a>
+
+      <div class="it-nav-actions">
+        <a href="../index.html" class="it-back-link">
+          <span aria-hidden="true">←</span> Back Home
+        </a>
+        <a
+          href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20am%20interested%20in%20web%20development."
+          class="it-btn it-btn-small"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-service="Web Development"
+        >
+          Let's Talk <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="it-hero">
+      <div class="it-hero-glow it-glow-one"></div>
+      <div class="it-hero-glow it-glow-two"></div>
+
+      <div class="it-hero-inner">
+
+        <div class="it-hero-copy it-reveal">
+          <div class="it-eyebrow">
+            <span class="it-status-dot"></span>
+            DIGITAL SOLUTIONS FOR MODERN BUSINESSES
+          </div>
+
+          <h1>
+            We build websites
+            <span class="it-gradient-text">that work for you.</span>
+          </h1>
+
+          <p class="it-hero-description">
+            Turn your ideas into a powerful online presence. We create
+            modern, responsive and user-friendly websites that help
+            businesses connect with customers, showcase their services
+            and grow online.
+          </p>
+
+          <div class="it-hero-buttons">
+            <a
+              href="#it-contact"
+              class="it-btn"
+              data-service="Web Development"
+            >
+              Start Your Project <span aria-hidden="true">→</span>
+            </a>
+
+            <a href="#it-services" class="it-btn it-btn-ghost">
+              Explore Services
+            </a>
+          </div>
+
+          <div class="it-trust-line">
+            <span aria-hidden="true">✓</span>
+            Responsive design
+            <span class="it-trust-separator">•</span>
+            <span aria-hidden="true">✓</span>
+            User-friendly experience
+            <span class="it-trust-separator">•</span>
+            <span aria-hidden="true">✓</span>
+            Business-focused solutions
+          </div>
+        </div>
+
+        <div class="it-hero-visual it-reveal">
+          <div class="it-image-frame">
+
+            <img
+              class="it-hero-image"
+              src="../images/WEB_DEVELOPMENT.jpg"
+              alt="Web development and website design"
+              fetchpriority="high"
+              onerror="this.onerror=null;this.src='../images/IT_SUPPORT.jpg';"
+            >
+
+            <div class="it-image-overlay"></div>
+
+            <div class="it-floating-card it-card-top">
+              <div class="it-floating-icon">
+                <icon name="monitor-smartphone" size="22" />
+              </div>
+              <div>
+                <strong>Responsive Design</strong>
+                <span>Desktop, tablet and mobile</span>
+              </div>
+            </div>
+
+            <div class="it-floating-card it-card-bottom">
+              <div class="it-card-top">
+                <span class="it-status-dot"></span>
+                <strong>Built for your goals</strong>
+              </div>
+              <span>From idea to online presence</span>
+            </div>
+          </div>
+
+          <div class="it-visual-caption">
+            <span>01 / DIGITAL PRESENCE</span>
+            <span>DESIGNED TO CONNECT</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="it-hero-bottom">
+        <span>YOUR IDEA. YOUR WEBSITE. YOUR NEXT STEP.</span>
+        <span aria-hidden="true">↓</span>
+      </div>
+    </section>
+
+    <!-- QUICK BENEFITS STRIP -->
+    <section class="it-quick-strip">
+      <div>
+        <icon name="smartphone" size="22" />
+        <span>Mobile-friendly websites</span>
+      </div>
+      <div>
+        <icon name="layout-template" size="22" />
+        <span>Modern layouts</span>
+      </div>
+      <div>
+        <icon name="gauge" size="22" />
+        <span>Performance-conscious design</span>
+      </div>
+      <div>
+        <icon name="message-circle" size="22" />
+        <span>Clear communication</span>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="it-section" id="it-services">
+      <div class="it-section-heading it-reveal">
+        <span class="it-section-label">WHAT WE DO</span>
+        <h2>
+          Everything you need to
+          <span class="it-gradient-text">get online.</span>
+        </h2>
+        <p>
+          Whether you are starting from scratch or improving an existing
+          website, we can help you build a solution that fits your needs.
+        </p>
+      </div>
+
+      <div class="it-service-grid">
+
+        <article class="it-service-card it-reveal">
+          <div class="it-service-top">
+            <div class="it-service-icon">
+              <icon name="globe" size="27" />
+            </div>
+            <span class="it-service-number">01</span>
+          </div>
+          <h3>Business Websites</h3>
+          <p>
+            Establish a professional online presence with a website that
+            introduces your business, services, contact details and brand.
+          </p>
+          <a href="#it-contact" class="it-card-link" data-service="Business Website">
+            Discuss your website <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="it-service-card it-reveal">
+          <div class="it-service-top">
+            <div class="it-service-icon">
+              <icon name="shopping-cart" size="27" />
+            </div>
+            <span class="it-service-number">02</span>
+          </div>
+          <h3>E-commerce Websites</h3>
+          <p>
+            Present your products online through a shopping experience
+            designed to help customers browse, enquire and place orders.
+          </p>
+          <a href="#it-contact" class="it-card-link" data-service="E-commerce Website">
+            Discuss online selling <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="it-service-card it-reveal">
+          <div class="it-service-top">
+            <div class="it-service-icon">
+              <icon name="palette" size="27" />
+            </div>
+            <span class="it-service-number">03</span>
+          </div>
+          <h3>Website Design</h3>
+          <p>
+            Get clean layouts, thoughtful colour choices and intuitive
+            navigation that make your website easier to use.
+          </p>
+          <a href="#it-contact" class="it-card-link" data-service="Website Design">
+            Improve your design <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="it-service-card it-reveal">
+          <div class="it-service-top">
+            <div class="it-service-icon">
+              <icon name="smartphone" size="27" />
+            </div>
+            <span class="it-service-number">04</span>
+          </div>
+          <h3>Responsive Development</h3>
+          <p>
+            Make your website adapt to different screen sizes, helping
+            visitors use it on phones, tablets and desktop computers.
+          </p>
+          <a href="#it-contact" class="it-card-link" data-service="Responsive Website Development">
+            Go mobile-friendly <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="it-service-card it-reveal">
+          <div class="it-service-top">
+            <div class="it-service-icon">
+              <icon name="refresh-cw" size="27" />
+            </div>
+            <span class="it-service-number">05</span>
+          </div>
+          <h3>Website Improvements</h3>
+          <p>
+            Refresh an existing website with improved layouts, updated
+            content, better usability and new features where appropriate.
+          </p>
+          <a href="#it-contact" class="it-card-link" data-service="Website Improvements">
+            Upgrade your website <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+        <article class="it-service-card it-reveal">
+          <div class="it-service-top">
+            <div class="it-service-icon">
+              <icon name="settings" size="27" />
+            </div>
+            <span class="it-service-number">06</span>
+          </div>
+          <h3>Website Functionality</h3>
+          <p>
+            Add useful features such as contact forms, enquiry forms,
+            booking requests and other functionality suited to your project.
+          </p>
+          <a href="#it-contact" class="it-card-link" data-service="Website Functionality">
+            Plan your features <span aria-hidden="true">↗</span>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="it-why-section">
+      <div class="it-why-inner">
+
+        <div class="it-why-visual it-reveal">
+          <div class="it-tech-window">
+            <div class="it-window-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <p>your-website.html</p>
+            </div>
+
+            <div class="it-terminal-content">
+              <p><span class="it-terminal-purple">&lt;website&gt;</span></p>
+              <p class="it-terminal-indent">
+                <span class="it-terminal-blue">&lt;design&gt;</span>
+              </p>
+              <p class="it-terminal-indent-two">
+                Modern and responsive
+              </p>
+              <p class="it-terminal-indent">
+                <span class="it-terminal-blue">&lt;/design&gt;</span>
+              </p>
+              <p class="it-terminal-indent">
+                <span class="it-terminal-blue">&lt;purpose&gt;</span>
+              </p>
+              <p class="it-terminal-indent-two">
+                Built around your goals
+              </p>
+              <p class="it-terminal-indent">
+                <span class="it-terminal-blue">&lt;/purpose&gt;</span>
+              </p>
+              <p><span class="it-terminal-purple">&lt;/website&gt;</span></p>
+
+              <div class="it-terminal-status">
+                <span class="it-status-dot"></span>
+                YOUR VISION, BUILT FOR THE WEB
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="it-why-copy it-reveal">
+          <span class="it-section-label">WHY SULTECH SOLUTIONS</span>
+          <h2>
+            More than a website.
+            <span class="it-gradient-text">A tool for growth.</span>
+          </h2>
+
+          <p>
+            Your website should do more than look good. It should help
+            visitors understand what you offer and make it easy for them
+            to take the next step.
+          </p>
+
+          <div class="it-benefit">
+            <div class="it-service-icon">
+              <icon name="check-circle-2" size="22" />
+            </div>
+            <div>
+              <h3>Built around your needs</h3>
+              <p>
+                We consider your goals, audience and requirements before
+                deciding on the right approach.
+              </p>
+            </div>
+          </div>
+
+          <div class="it-benefit">
+            <div class="it-service-icon">
+              <icon name="monitor-smartphone" size="22" />
+            </div>
+            <div>
+              <h3>Designed for different devices</h3>
+              <p>
+                We aim for a consistent and comfortable experience across
+                supported screen sizes.
+              </p>
+            </div>
+          </div>
+
+          <div class="it-benefit">
+            <div class="it-service-icon">
+              <icon name="messages-square" size="22" />
+            </div>
+            <div>
+              <h3>Clear communication</h3>
+              <p>
+                Discuss your ideas, ask questions and understand the
+                proposed work before moving forward.
+              </p>
+            </div>
+          </div>
+
+          <a
+            href="#it-contact"
+            class="it-btn"
+            data-service="Web Development"
+          >
+            Let's Build Something <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OUR PROCESS -->
+    <section class="it-section">
+      <div class="it-section-heading it-reveal">
+        <span class="it-section-label">HOW IT WORKS</span>
+        <h2>A straightforward path from <span class="it-gradient-text">idea to launch.</span></h2>
+        <p>
+          We break the project into clear steps so you know what comes next.
+        </p>
+      </div>
+
+      <div class="it-process-grid">
+
+        <article class="it-process-step it-reveal">
+          <span class="it-process-number">01</span>
+          <h3>Discuss</h3>
+          <p>
+            Tell us about your business, your audience and what you want
+            your website to achieve.
+          </p>
+        </article>
+
+        <article class="it-process-step it-reveal">
+          <span class="it-process-number">02</span>
+          <h3>Plan and Design</h3>
+          <p>
+            Agree on the website structure, key features, design direction
+            and project scope.
+          </p>
+        </article>
+
+        <article class="it-process-step it-reveal">
+          <span class="it-process-number">03</span>
+          <h3>Develop and Review</h3>
+          <p>
+            Build the agreed website and review its content, appearance
+            and functionality.
+          </p>
+        </article>
+
+        <article class="it-process-step it-reveal">
+          <span class="it-process-number">04</span>
+          <h3>Launch</h3>
+          <p>
+            Prepare the website for launch according to the agreed
+            hosting, domain and delivery arrangements.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="it-faq-section">
+      <div class="it-faq-layout">
+
+        <div class="it-faq-intro it-reveal">
+          <span class="it-section-label">COMMON QUESTIONS</span>
+          <h2>Questions before we <span class="it-gradient-text">get started?</span></h2>
+          <p>
+            Here are answers to some common questions about our web
+            development services.
+          </p>
+
+          <a
+            href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20have%20a%20question%20about%20web%20development."
+            class="it-btn it-btn-ghost"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-service="Web Development"
+          >
+            Ask Us Directly <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="it-faq-list it-reveal">
+
+          <details class="it-faq-item">
+            <summary>How much does a website cost?</summary>
+            <p>
+              The cost depends on the number of pages, design requirements,
+              features and overall project scope. Contact us with your idea
+              for a tailored quotation.
+            </p>
+          </details>
+
+          <details class="it-faq-item">
+            <summary>How long does it take to build a website?</summary>
+            <p>
+              The timeline depends on the complexity of the project,
+              content availability and required features. We can discuss
+              an estimated timeline after understanding your requirements.
+            </p>
+          </details>
+
+          <details class="it-faq-item">
+            <summary>Can you make my website work on mobile phones?</summary>
+            <p>
+              Yes. Responsive design is an important consideration so
+              visitors can use the website on mobile phones, tablets and
+              desktop computers.
+            </p>
+          </details>
+
+          <details class="it-faq-item">
+            <summary>Can you improve a website I already have?</summary>
+            <p>
+              Yes. We can discuss design updates, content changes,
+              usability improvements and additional functionality for
+              an existing website.
+            </p>
+          </details>
+
+          <details class="it-faq-item">
+            <summary>Do I need a domain name and hosting?</summary>
+            <p>
+              A public website generally needs a way to be accessed online.
+              Depending on your project, this may involve a domain name
+              and hosting. We can discuss suitable arrangements with you.
+            </p>
+          </details>
+
+          <details class="it-faq-item">
+            <summary>How do I request a website?</summary>
+            <p>
+              Contact us through WhatsApp and tell us about your business,
+              the type of website you need and any features you have in
+              mind. We can then discuss the next steps.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="it-contact-section" id="it-contact">
+      <div class="it-contact-glow"></div>
+
+      <div class="it-contact-content it-reveal">
+        <span class="it-section-label">LET'S BUILD YOUR ONLINE PRESENCE</span>
+
+        <h2>
+          Ready to bring your
+          <span class="it-gradient-text">idea to life?</span>
+        </h2>
+
+        <p>
+          Tell us what you have in mind. Whether you need a business
+          website, an online store or a redesign, let's discuss a solution
+          that suits your goals.
+        </p>
+
+        <div class="it-hero-buttons">
+          <a
+            href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20would%20like%20to%20discuss%20a%20web%20development%20project."
+            class="it-btn it-btn-light"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-service="Web Development"
+          >
+            <icon name="message-circle" size="19" />
+            Chat on WhatsApp
+          </a>
+
+          <a href="../index.html#contact" class="it-btn it-btn-ghost">
+            Explore Our Website
+          </a>
+        </div>
+
+        <p class="it-contact-note">
+          Share your requirements first; we'll discuss the suitable next steps.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="it-footer">
+    <div>
+      <a href="../index.html" class="it-brand">
+        <span class="it-brand-icon">
+          <icon name="code-2" size="21" />
+        </span>
+        <span>SulTech <span class="it-gradient-text">Solutions</span></span>
+      </a>
+      <p>Practical digital solutions for your business.</p>
+    </div>
+
+    <div class="it-footer-bottom">
+      <span>
+        © <span id="it-year"></span> SulTech Solutions. All rights reserved.
+      </span>
+      <a href="../index.html">Back to Home ↑</a>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a
+    href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20am%20interested%20in%20web%20development."
+    class="it-whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact SulTech Solutions on WhatsApp"
+    data-service="Web Development"
+  >
+    <icon name="message-circle" size="25" />
+    <span class="it-whatsapp-label">Let's Talk</span>
+  </a>
+
+  <!-- Shared service pages JavaScript -->
+  <script src="service-pages.js"></script>
+
 </body>
 </html>
