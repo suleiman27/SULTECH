@@ -1,98 +1,191 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>IT Support Services | SulTech Solutions</title>
-  <meta name="description" content="Reliable IT support from SulTech Solutions, including computer troubleshooting, software installation, system maintenance and technical assistance.">
-
-  <link rel="stylesheet" href="../styles.css">
+  <meta name="description" content="Professional IT support, computer troubleshooting, software installation and network assistance from SulTech Solutions.">
+  <title>IT Support | SulTech Solutions</title>
+  <link rel="stylesheet" href="service-pages.css">
 </head>
+<body class="it-page">
 
-<body>
+<header class="it-header">
+  <nav class="it-nav">
+    <a class="it-brand" href="../index.html">
+      <span class="it-brand-icon">S</span>
+      <span>SulTech <span class="it-gradient-text">Solutions</span></span>
+    </a>
+    <div class="it-nav-actions">
+      <a class="it-back-link" href="../index.html">← Back Home</a>
+      <a class="it-btn it-btn-small" href="#it-contact">Get in touch ↗</a>
+    </div>
+  </nav>
+</header>
 
-  <!-- Header -->
-  <header class="site-header">
-    <nav class="nav container">
-      <a href="../index.html" class="brand">
-        SulTech <span class="accent">Solutions</span>
-      </a>
-
-      <a href="../index.html" class="btn btn-outline">
-        ← Back Home
-      </a>
-    </nav>
-  </header>
-
-  <!-- Main Content -->
-  <main class="section container">
-
-    <div class="service-page-content">
-      <h1>IT Support Services</h1>
-
-      <p>
-        Reliable technical support to keep your computers, software
-        and business systems running smoothly.
-      </p>
-
-      <div class="service-image">
-        <img
-          src="../images/IT SUPPORT1.jpg"
-          alt="IT support and computer troubleshooting"
-          style="width:100%; max-width:800px; height:auto; display:block; margin:25px auto; border-radius:12px;"
-        >
+<main>
+  <section class="it-hero">
+    <div class="it-hero-glow it-glow-one"></div>
+    <div class="it-hero-glow it-glow-two"></div>
+    <div class="it-hero-inner">
+      <div class="it-hero-copy it-reveal">
+        <p class="it-eyebrow"><span class="it-status-dot"></span> TECHNOLOGY THAT WORKS FOR YOU</p>
+        <h1>Reliable <span class="it-gradient-text">IT Support</span> for Everyday Business</h1>
+        <p class="it-hero-description">Get practical help with computer problems, software installation, connectivity and technical setup—so you can focus on what matters.</p>
+        <div class="it-hero-buttons">
+          <a class="it-btn" href="#it-contact" data-service="IT Support">Get IT Support ↗</a>
+          <a class="it-btn it-btn-ghost" href="#it-services">Explore Services ↓</a>
+        </div>
+        <p class="it-trust-line">✓ Practical solutions · Clear communication · Customer-focused</p>
       </div>
 
-      <section>
-        <h2>Our IT Support Services</h2>
+      <div class="it-hero-visual it-reveal">
+        <div class="it-image-frame">
+          <img class="it-hero-image" src="../images/IT_SUPPORT.jpg" alt="Computer and IT support services">
+          <div class="it-image-overlay"></div>
+          <div class="it-floating-card it-card-top">
+            <span class="it-floating-icon">✦</span>
+            <span><strong>Smart solutions</strong><small>Built around your needs</small></span>
+          </div>
+          <div class="it-floating-card it-card-bottom">
+            <span class="it-floating-icon">✓</span>
+            <span><strong>Reliable assistance</strong><small>Help when you need it</small></span>
+          </div>
+        </div>
+        <p class="it-visual-caption">SulTech Solutions <span>— technology made practical</span></p>
+      </div>
+    </div>
+    <div class="it-hero-bottom"></div>
+  </section>
 
-        <p>
-          We help individuals and businesses solve common technology
-          problems, maintain their systems and improve productivity.
-        </p>
+  <section class="it-quick-strip">
+    <span>Computer Troubleshooting</span>
+    <span>Software Installation</span>
+    <span>Network Support</span>
+    <span>System Maintenance</span>
+  </section>
 
-        <ul>
-          <li>Computer troubleshooting and maintenance</li>
-          <li>Software installation and configuration</li>
-          <li>Windows installation and system setup</li>
-          <li>Basic networking and connectivity support</li>
-          <li>Printer installation and troubleshooting</li>
-          <li>General technical assistance</li>
+  <section class="it-section" id="it-services">
+    <div class="it-section-heading it-reveal">
+      <p class="it-section-label">WHAT WE CAN HELP WITH</p>
+      <h2>IT services designed around <span class="it-gradient-text">your needs</span></h2>
+      <p>Practical technical support for individuals, home offices and small businesses.</p>
+    </div>
+
+    <div class="it-service-grid">
+      <article class="it-service-card it-reveal">
+        <div class="it-service-top"><span class="it-service-icon">⌘</span><span class="it-service-number">01</span></div>
+        <h3>Computer Troubleshooting</h3>
+        <p>Get help diagnosing common computer, printer, operating-system and performance issues.</p>
+        <a class="it-card-link" href="#it-contact" data-service="Computer Troubleshooting">Ask about this ↗</a>
+      </article>
+      <article class="it-service-card it-reveal">
+        <div class="it-service-top"><span class="it-service-icon">⚙</span><span class="it-service-number">02</span></div>
+        <h3>Software Installation</h3>
+        <p>Assistance with legitimate software, application setup, drivers and configuration.</p>
+        <a class="it-card-link" href="#it-contact" data-service="Software Installation">Ask about this ↗</a>
+      </article>
+      <article class="it-service-card it-reveal">
+        <div class="it-service-top"><span class="it-service-icon">⌁</span><span class="it-service-number">03</span></div>
+        <h3>Network & Connectivity</h3>
+        <p>Troubleshoot common Wi-Fi, router and local network connection problems.</p>
+        <a class="it-card-link" href="#it-contact" data-service="Network Support">Ask about this ↗</a>
+      </article>
+      <article class="it-service-card it-reveal">
+        <div class="it-service-top"><span class="it-service-icon">▣</span><span class="it-service-number">04</span></div>
+        <h3>Maintenance & Updates</h3>
+        <p>Keep devices organized and updated with practical maintenance and security guidance.</p>
+        <a class="it-card-link" href="#it-contact" data-service="Computer Maintenance">Ask about this ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="it-section it-why-section">
+    <div class="it-why-inner">
+      <div class="it-why-visual it-reveal">
+        <div class="it-tech-window">
+          <div class="it-window-bar"><span></span><span></span><span></span><small>SULTECH / SUPPORT</small></div>
+          <div class="it-terminal-content">
+            <p class="it-terminal-muted">// Our approach</p>
+            <p><span class="it-terminal-blue">const</span> goal = <span class="it-terminal-green">"your success"</span>;</p>
+            <p><span class="it-terminal-blue">const</span> steps = [</p>
+            <p class="it-terminal-indent"><span class="it-terminal-green">"listen"</span>,</p>
+            <p class="it-terminal-indent"><span class="it-terminal-green">"diagnose"</span>,</p>
+            <p class="it-terminal-indent"><span class="it-terminal-green">"solve"</span></p>
+            <p>];</p>
+            <p class="it-terminal-success">✓ Ready to get started</p>
+          </div>
+        </div>
+      </div>
+      <div class="it-why-copy it-reveal">
+        <p class="it-section-label">WHY SULTECH SOLUTIONS</p>
+        <h2>Technology should make work <span class="it-gradient-text">easier.</span></h2>
+        <p>We focus on understanding the problem, explaining the available options and helping you find a practical solution.</p>
+        <ul class="it-benefit-list">
+          <li class="it-benefit"><span>✓</span><span>Clear explanations without unnecessary jargon</span></li>
+          <li class="it-benefit"><span>✓</span><span>Practical solutions for home and business needs</span></li>
+          <li class="it-benefit"><span>✓</span><span>Support with setup, troubleshooting and maintenance</span></li>
         </ul>
-      </section>
-
-      <section>
-        <h2>Need IT Assistance?</h2>
-
-        <p>
-          Contact SulTech Solutions to discuss your technical needs
-          and find a suitable solution.
-        </p>
-
-        <a
-          href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20need%20IT%20support."
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contact Us on WhatsApp
-        </a>
-      </section>
+        <a class="it-btn" href="#it-contact" data-service="IT Support">Let's talk ↗</a>
+      </div>
     </div>
+  </section>
 
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> SulTech Solutions. All rights reserved.</p>
+  <section class="it-section">
+    <div class="it-section-heading it-reveal">
+      <p class="it-section-label">HOW IT WORKS</p>
+      <h2>Simple steps. <span class="it-gradient-text">Practical solutions.</span></h2>
+      <p>We begin by understanding your issue and agreeing on the next steps.</p>
     </div>
-  </footer>
+    <div class="it-process-grid">
+      <article class="it-process-step it-reveal"><span class="it-process-number">01</span><h3>Tell us the issue</h3><p>Describe the device, error message or task you need help with.</p></article>
+      <article class="it-process-step it-reveal"><span class="it-process-number">02</span><h3>Review the solution</h3><p>Discuss the likely cause, requirements and possible next steps.</p></article>
+      <article class="it-process-step it-reveal"><span class="it-process-number">03</span><h3>Get back to work</h3><p>Receive support and guidance for the agreed task.</p></article>
+    </div>
+  </section>
 
-  <script src="../script.js"></script>
+  <section class="it-section it-faq-section">
+    <div class="it-faq-layout">
+      <div class="it-faq-intro it-reveal">
+        <p class="it-section-label">FREQUENTLY ASKED QUESTIONS</p>
+        <h2>Good questions. <span class="it-gradient-text">Clear answers.</span></h2>
+        <p>Need to know something else? Contact us and tell us what you need.</p>
+        <a class="it-card-link" href="#it-contact">Ask us directly ↗</a>
+      </div>
+      <div class="it-faq-list it-reveal">
+        <details class="it-faq-item"><summary>What IT problems can you help with?</summary><div class="it-faq-answer"><p>We can discuss common computer, software, printer, connectivity and setup issues. The solution depends on the specific device and problem.</p></div></details>
+        <details class="it-faq-item"><summary>Can you install software?</summary><div class="it-faq-answer"><p>Yes. We can assist with legitimate software and drivers. Any required licences must be provided or purchased by the customer.</p></div></details>
+        <details class="it-faq-item"><summary>Do you support small businesses?</summary><div class="it-faq-answer"><p>Yes. Contact us to discuss your business requirements and the type of technical support you need.</p></div></details>
+        <details class="it-faq-item"><summary>Can every problem be fixed remotely?</summary><div class="it-faq-answer"><p>Not always. Some problems require physical inspection or specialist repair. We will discuss suitable options after reviewing the issue.</p></div></details>
+      </div>
+    </div>
+  </section>
 
+  <section class="it-contact-section" id="it-contact">
+    <div class="it-contact-glow"></div>
+    <div class="it-contact-content it-reveal">
+      <p class="it-section-label">LET'S SOLVE IT</p>
+      <h2>Need help with a computer or technical issue?</h2>
+      <p>Tell us what is happening, and let's discuss a practical way forward.</p>
+      <div class="it-hero-buttons">
+        <a class="it-btn it-btn-light" href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20need%20IT%20support." target="_blank" rel="noopener noreferrer" data-service="IT Support">Enquire on WhatsApp ↗</a>
+        <a class="it-btn it-btn-ghost" href="../index.html">Return to website</a>
+      </div>
+      <p class="it-contact-note">We will first clarify your requirements and discuss the next steps.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="it-footer">
+  <a class="it-brand" href="../index.html"><span class="it-brand-icon">S</span><span>SulTech <span class="it-gradient-text">Solutions</span></span></a>
+  <p>Practical digital and technology solutions for your next step.</p>
+  <p class="it-footer-copy">© <span id="it-year"></span> SulTech Solutions. All rights reserved.</p>
+</footer>
+
+<a class="it-whatsapp" href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener noreferrer" aria-label="Contact SulTech Solutions on WhatsApp">
+  <span aria-hidden="true">◉</span><span class="it-whatsapp-label">Chat on WhatsApp</span>
+</a>
+
+<script src="service-pages.js"></script>
 </body>
 </html>
-```
