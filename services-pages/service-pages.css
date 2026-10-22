@@ -1231,4 +1231,54 @@
     transform: none;
   }
 }
-```
+
+/* FIX: Ensure service-page hero text is visible */
+.it-hero-copy,
+.it-hero-copy h1,
+.it-hero-copy p,
+.it-hero-copy .it-eyebrow,
+.it-hero-copy .it-gradient-text,
+.it-hero-description,
+.it-hero-buttons,
+.it-trust-line {
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: inherit;
+}
+
+.it-hero-copy {
+    display: block !important;
+    position: relative;
+    z-index: 5;
+}
+
+.it-hero-copy h1 {
+    display: block !important;
+    color: #ffffff;
+}
+
+.it-hero-copy p,
+.it-hero-description {
+    display: block !important;
+    color: #d1d5db;
+    line-height: 1.7;
+}
+
+.it-hero-buttons {
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.it-eyebrow,
+.it-trust-line {
+    display: block !important;
+}
+
+@media (max-width: 768px) {
+    .it-hero-copy {
+        display: block !important;
+        width: 100%;
+    }
+}
+
