@@ -444,3 +444,32 @@ body.dark-mode .gallery-item {
     text-align: center;
   }
 }
+
+
+/* Fix spacing between theme toggle and Work With Us button */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.header-actions .theme-toggle,
+.header-actions #theme-toggle,
+.header-actions .dark-mode-toggle {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 6px;
+}
+
+.header-actions a,
+.header-actions button {
+    flex-shrink: 0;
+}
+
+/* Keep header controls separated on smaller screens */
+@media (max-width: 768px) {
+    .header-actions {
+        gap: 10px;
+    }
+}
