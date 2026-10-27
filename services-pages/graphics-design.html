@@ -2,26 +2,483 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Graphic design for flyers, posters, business cards, social media artwork and branding by SulTech Solutions.">
-<title>Graphic Design | SulTech Solutions</title><link rel="stylesheet" href="service-pages.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Affordable graphic design by SulTech Solutions. Flyers, posters, business cards, social media graphics and print-ready artwork.">
+  <meta name="theme-color" content="#f5f8ff">
+  <title>Graphic Design | SulTech Solutions</title>
+  <link rel="stylesheet" href="service-pages.css">
+
+  <style>
+    /* GRAPHIC DESIGN PAGE */
+    .gd-page {
+      --gd-bg: #f5f8ff;
+      --gd-card: #ffffff;
+      --gd-text: #17243b;
+      --gd-muted: #617087;
+      --gd-blue: #2864e8;
+      --gd-cyan: #11aeb5;
+      --gd-border: #e0e7f2;
+      background: var(--gd-bg);
+      color: var(--gd-text);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .gd-page * { box-sizing: border-box; }
+    .gd-page a { text-decoration: none; }
+    .gd-page .it-header {
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid var(--gd-border);
+    }
+    .gd-page .it-brand { color: var(--gd-text); }
+    .gd-page .it-brand-icon {
+      color: #fff;
+      background: linear-gradient(135deg,var(--gd-blue),var(--gd-cyan));
+    }
+    .gd-page .it-gradient-text {
+      color: var(--gd-blue);
+      background: linear-gradient(90deg,var(--gd-blue),var(--gd-cyan));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gd-page .it-back-link { color: var(--gd-muted); }
+    .gd-page .it-btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 19px;
+      border: 1px solid var(--gd-blue);
+      border-radius: 10px;
+      background: var(--gd-blue);
+      color: #fff;
+      font-weight: 700;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .gd-page .it-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px #2864e82b;
+    }
+    .gd-page .it-btn-small { padding: 9px 14px; }
+    .gd-page .it-btn-ghost {
+      background: #fff;
+      color: var(--gd-blue);
+      border-color: var(--gd-border);
+    }
+
+    .gd-hero {
+      padding: 55px 0 35px;
+      background:
+        radial-gradient(circle at 85% 15%,#d9f6f5 0,transparent 28%),
+        radial-gradient(circle at 8% 90%,#e1eaff 0,transparent 32%),
+        var(--gd-bg);
+    }
+    .gd-wrap { width: min(1100px,91%); margin: auto; }
+    .gd-hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 45px;
+    }
+    .gd-eyebrow,.gd-label {
+      color: var(--gd-blue);
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: 1.7px;
+      text-transform: uppercase;
+    }
+    .gd-eyebrow { display:flex; align-items:center; gap:9px; }
+    .gd-dot {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: var(--gd-cyan);
+      box-shadow: 0 0 0 5px #11aeb51c;
+    }
+    .gd-hero h1 {
+      margin: 13px 0 16px;
+      max-width: 570px;
+      font-size: clamp(2.35rem,5vw,4rem);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      color: var(--gd-text);
+    }
+    .gd-hero-copy {
+      max-width: 510px;
+      color: var(--gd-muted);
+      font-size: 1.04rem;
+    }
+    .gd-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }
+    .gd-trust {
+      margin-top: 20px;
+      color: var(--gd-muted);
+      font-size: .88rem;
+    }
+    .gd-visual {
+      position: relative;
+      padding: 12px;
+      border: 1px solid #fff;
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 24px 65px #243d671b;
+      transform: rotate(1deg);
+    }
+    .gd-visual img {
+      display:block;
+      width:100%;
+      height: 330px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+    .gd-image-tag {
+      position:absolute;
+      bottom:27px;
+      left:27px;
+      right:27px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      padding:13px 15px;
+      border:1px solid #ffffffa8;
+      border-radius:12px;
+      background:#ffffffed;
+      color:var(--gd-text);
+      box-shadow:0 8px 25px #15233a14;
+    }
+    .gd-image-tag strong { display:block; font-size:.92rem; }
+    .gd-image-tag small { color:var(--gd-muted); }
+    .gd-image-tag-icon {
+      display:grid; place-items:center;
+      width:39px; height:39px;
+      border-radius:11px;
+      color:var(--gd-blue);
+      background:#eaf0ff;
+      font-size:1.35rem;
+    }
+
+    .gd-strip {
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:10px;
+      padding:18px 4%;
+      background:#fff;
+      border-top:1px solid var(--gd-border);
+      border-bottom:1px solid var(--gd-border);
+    }
+    .gd-strip span {
+      padding:7px 13px;
+      border:1px solid var(--gd-border);
+      border-radius:30px;
+      color:#40516b;
+      background:#f8faff;
+      font-size:.86rem;
+      font-weight:600;
+    }
+
+    .gd-section { padding:48px 0; }
+    .gd-heading { text-align:center; max-width:640px; margin:0 auto 25px; }
+    .gd-heading h2,.gd-process-heading h2 {
+      margin:7px 0;
+      color:var(--gd-text);
+      font-size:clamp(1.7rem,3vw,2.35rem);
+      line-height:1.2;
+      letter-spacing:-.7px;
+    }
+    .gd-heading p:not(.gd-label) { color:var(--gd-muted); margin:8px 0 0; }
+    .gd-services {
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:15px;
+    }
+    .gd-card {
+      min-width:0;
+      padding:20px 18px;
+      border:1px solid var(--gd-border);
+      border-radius:16px;
+      background:var(--gd-card);
+      box-shadow:0 7px 22px #1b31500a;
+      transition:transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .gd-card:hover {
+      transform:translateY(-4px);
+      border-color:#b8caff;
+      box-shadow:0 15px 30px #1b315012;
+    }
+    .gd-card-top { display:flex; justify-content:space-between; align-items:center; }
+    .gd-icon {
+      display:grid; place-items:center;
+      width:43px; height:43px;
+      border-radius:12px;
+      color:var(--gd-blue);
+      background:linear-gradient(135deg,#eaf0ff,#e1fbfa);
+      font-size:1.35rem;
+    }
+    .gd-number { color:#a0aec2; font-size:.8rem; font-weight:800; }
+    .gd-card h3 { margin:17px 0 7px; font-size:1.04rem; color:var(--gd-text); }
+    .gd-card p { margin:0; color:var(--gd-muted); font-size:.9rem; }
+    .gd-card a {
+      display:inline-block;
+      margin-top:15px;
+      color:var(--gd-blue);
+      font-size:.87rem;
+      font-weight:750;
+    }
+
+    .gd-process-section { padding:0 0 48px; }
+    .gd-process-panel {
+      padding:25px;
+      border:1px solid var(--gd-border);
+      border-radius:19px;
+      background:linear-gradient(120deg,#fff,#f0f7ff);
+    }
+    .gd-process-heading { text-align:center; margin-bottom:22px; }
+    .gd-process-grid {
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+    }
+    .gd-step {
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+      padding:15px;
+      border-radius:13px;
+      background:#fff;
+      border:1px solid var(--gd-border);
+    }
+    .gd-step-number {
+      display:grid; place-items:center;
+      flex:0 0 35px; height:35px;
+      border-radius:10px;
+      background:#eaf0ff;
+      color:var(--gd-blue);
+      font-size:.83rem;
+      font-weight:800;
+    }
+    .gd-step h3 { margin:0 0 4px; font-size:.96rem; }
+    .gd-step p { margin:0; color:var(--gd-muted); font-size:.86rem; }
+
+    .gd-contact {
+      padding:38px 20px;
+      text-align:center;
+      border-radius:20px;
+      background:linear-gradient(120deg,#183b85,#2864e8 60%,#079fa8);
+      color:#fff;
+    }
+    .gd-contact .gd-label { color:#bcefff; }
+    .gd-contact h2 {
+      max-width:650px;
+      margin:8px auto;
+      color:#fff;
+      font-size:clamp(1.7rem,3vw,2.3rem);
+      line-height:1.2;
+    }
+    .gd-contact p { margin:8px auto 20px; color:#e3ecff; }
+    .gd-contact .it-btn {
+      color:var(--gd-blue);
+      background:#fff;
+      border-color:#fff;
+    }
+    .gd-footer {
+      padding:27px 0;
+      text-align:center;
+      color:var(--gd-muted);
+      font-size:.88rem;
+    }
+    .gd-footer .it-brand { justify-content:center; }
+    .gd-footer p { margin:8px 0 0; }
+
+    .gd-page .it-whatsapp {
+      position:fixed;
+      z-index:1001;
+      right:20px;
+      bottom:20px;
+      display:flex;
+      align-items:center;
+      gap:9px;
+      padding:12px 16px;
+      border-radius:30px;
+      background:#16a765;
+      color:#fff;
+      box-shadow:0 7px 24px #102b1b2b;
+      font-size:.88rem;
+      font-weight:750;
+    }
+
+    @media(max-width:850px) {
+      .gd-hero-grid { grid-template-columns:1fr  .85fr; gap:25px; }
+      .gd-visual img { height:280px; }
+      .gd-services { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    }
+    @media(max-width:620px) {
+      .gd-hero { padding:35px 0 28px; }
+      .gd-hero-grid { grid-template-columns:1fr; gap:25px; }
+      .gd-hero h1 { font-size:2.55rem; }
+      .gd-visual { max-width:480px; margin:auto; }
+      .gd-visual img { height:245px; }
+      .gd-section { padding:35px 0; }
+      .gd-services { gap:11px; }
+      .gd-card { padding:15px 13px; }
+      .gd-card h3 { font-size:.98rem; }
+      .gd-card p { font-size:.86rem; }
+      .gd-process-panel { padding:17px; }
+      .gd-process-grid { grid-template-columns:1fr; }
+      .gd-contact { padding:30px 17px; }
+      .gd-page .it-nav { min-height:65px; }
+      .gd-page .it-nav-actions { gap:10px; }
+      .gd-page .it-back-link { font-size:.85rem; }
+      .gd-page .it-btn-small { padding:8px 10px; font-size:.82rem; }
+      .gd-page .it-whatsapp { right:12px; bottom:12px; padding:11px 14px; }
+    }
+    @media(max-width:380px) {
+      .gd-page .it-back-link { display:none; }
+      .gd-services { grid-template-columns:1fr; }
+      .gd-hero h1 { font-size:2.2rem; }
+    }
+  </style>
 </head>
-<body class="it-page">
-<header class="it-header"><nav class="it-nav"><a class="it-brand" href="../index.html"><span class="it-brand-icon">S</span><span>SulTech <span class="it-gradient-text">Solutions</span></span></a><div class="it-nav-actions"><a class="it-back-link" href="../index.html">← Back Home</a><a class="it-btn it-btn-small" href="#it-contact">Get in touch ↗</a></div></nav></header>
-<main>
-<section class="it-hero"><div class="it-hero-glow it-glow-one"></div><div class="it-hero-glow it-glow-two"></div><div class="it-hero-inner"><div class="it-hero-copy it-reveal"><p class="it-eyebrow"><span class="it-status-dot"></span> DESIGNS THAT COMMUNICATE</p><h1>Creative, Practical <span class="it-gradient-text">Graphic Design</span></h1><p class="it-hero-description">Present your brand clearly with thoughtful visuals for digital platforms, promotions and print materials.</p><div class="it-hero-buttons"><a class="it-btn" href="#it-contact" data-service="Graphic Design">Start a Design ↗</a><a class="it-btn it-btn-ghost" href="#it-services">Explore Services ↓</a></div><p class="it-trust-line">✓ Creative layouts · Clear messaging · Brand consistency</p></div><div class="it-hero-visual it-reveal"><div class="it-image-frame"><img class="it-hero-image" src="../images/GRAPHIC_DESIGN.jpg" alt="Graphic design and promotional artwork"><div class="it-image-overlay"></div><div class="it-floating-card it-card-top"><span class="it-floating-icon">✦</span><span><strong>Creative ideas</strong><small>Made visual</small></span></div><div class="it-floating-card it-card-bottom"><span class="it-floating-icon">▧</span><span><strong>Ready to share</strong><small>Digital or print</small></span></div></div><p class="it-visual-caption">SulTech Solutions <span>— ideas brought to life</span></p></div></div><div class="it-hero-bottom"></div></section>
-<section class="it-quick-strip"><span>Flyers & Posters</span><span>Business Cards</span><span>Social Media</span><span>Print Artwork</span></section>
-<section class="it-section" id="it-services"><div class="it-section-heading it-reveal"><p class="it-section-label">DESIGN SERVICES</p><h2>Visuals that make your message <span class="it-gradient-text">stand out</span></h2><p>Designs should look good, communicate clearly and suit their intended use.</p></div><div class="it-service-grid">
-<article class="it-service-card it-reveal"><div class="it-service-top"><span class="it-service-icon">▧</span><span class="it-service-number">01</span></div><h3>Flyers & Posters</h3><p>Promotional artwork for events, offers, announcements and campaigns.</p><a class="it-card-link" href="#it-contact" data-service="Flyer and Poster Design">Ask about this ↗</a></article>
-<article class="it-service-card it-reveal"><div class="it-service-top"><span class="it-service-icon">▤</span><span class="it-service-number">02</span></div><h3>Business Stationery</h3><p>Business cards, letterheads and related branded materials.</p><a class="it-card-link" href="#it-contact" data-service="Business Stationery Design">Ask about this ↗</a></article>
-<article class="it-service-card it-reveal"><div class="it-service-top"><span class="it-service-icon">◎</span><span class="it-service-number">03</span></div><h3>Social Media Graphics</h3><p>Visual posts and promotional artwork for your online platforms.</p><a class="it-card-link" href="#it-contact" data-service="Social Media Design">Ask about this ↗</a></article>
-<article class="it-service-card it-reveal"><div class="it-service-top"><span class="it-service-icon">▣</span><span class="it-service-number">04</span></div><h3>Print-Ready Artwork</h3><p>Set up artwork to the required dimensions and suitable export format.</p><a class="it-card-link" href="#it-contact" data-service="Print Ready Artwork">Ask about this ↗</a></article>
-</div></section>
-<section class="it-section it-why-section"><div class="it-why-inner"><div class="it-why-visual it-reveal"><div class="it-tech-window"><div class="it-window-bar"><span></span><span></span><span></span><small>DESIGN / WORKSPACE</small></div><div class="it-terminal-content"><p class="it-terminal-muted">// A thoughtful design</p><p><span class="it-terminal-blue">const</span> brief = <span class="it-terminal-green">"understood"</span>;</p><p><span class="it-terminal-blue">const</span> design = [</p><p class="it-terminal-indent"><span class="it-terminal-green">"layout"</span>,</p><p class="it-terminal-indent"><span class="it-terminal-green">"hierarchy"</span>,</p><p class="it-terminal-indent"><span class="it-terminal-green">"clarity"</span></p><p>];</p><p class="it-terminal-success">✓ Ready for review</p></div></div></div><div class="it-why-copy it-reveal"><p class="it-section-label">WHY CHOOSE US</p><h2>Good design combines <span class="it-gradient-text">style and clarity.</span></h2><p>We focus on readable layouts, consistent branding and the right dimensions for the intended use.</p><ul class="it-benefit-list"><li class="it-benefit"><span>✓</span><span>Layouts matched to your purpose and audience</span></li><li class="it-benefit"><span>✓</span><span>Consistent colors, fonts and visual hierarchy</span></li><li class="it-benefit"><span>✓</span><span>Digital or print exports agreed in advance</span></li></ul><a class="it-btn" href="#it-contact" data-service="Graphic Design">Discuss your idea ↗</a></div></div></section>
-<section class="it-section"><div class="it-section-heading it-reveal"><p class="it-section-label">OUR PROCESS</p><h2>From idea to <span class="it-gradient-text">finished artwork</span></h2></div><div class="it-process-grid"><article class="it-process-step it-reveal"><span class="it-process-number">01</span><h3>Share your brief</h3><p>Provide text, logo, dimensions, references and preferred style.</p></article><article class="it-process-step it-reveal"><span class="it-process-number">02</span><h3>Review the design</h3><p>Check the concept and provide feedback within the agreed scope.</p></article><article class="it-process-step it-reveal"><span class="it-process-number">03</span><h3>Receive your files</h3><p>Get the agreed artwork files and dimensions for your intended use.</p></article></div></section>
-<section class="it-section it-faq-section"><div class="it-faq-layout"><div class="it-faq-intro it-reveal"><p class="it-section-label">COMMON QUESTIONS</p><h2>Let's plan your <span class="it-gradient-text">next design</span></h2><p>Share your idea and intended use.</p><a class="it-card-link" href="#it-contact">Contact us ↗</a></div><div class="it-faq-list it-reveal"><details class="it-faq-item"><summary>What designs can you create?</summary><div class="it-faq-answer"><p>Common requests include flyers, posters, business cards, social media graphics and promotional materials.</p></div></details><details class="it-faq-item"><summary>Can I provide my own logo and photos?</summary><div class="it-faq-answer"><p>Yes. Please ensure you have permission to use any supplied logos, photos, fonts or other assets.</p></div></details><details class="it-faq-item"><summary>Can you prepare artwork for printing?</summary><div class="it-faq-answer"><p>Yes, if you provide the required print dimensions and any printer specifications.</p></div></details><details class="it-faq-item"><summary>Will I receive editable files?</summary><div class="it-faq-answer"><p>Editable/source files can be discussed before work begins and depend on the agreed deliverables.</p></div></details></div></div></section>
-<section class="it-contact-section" id="it-contact"><div class="it-contact-glow"></div><div class="it-contact-content it-reveal"><p class="it-section-label">BRING YOUR IDEA TO LIFE</p><h2>Have a design idea you want to bring to life?</h2><p>Tell us what you are designing and where you plan to use it.</p><div class="it-hero-buttons"><a class="it-btn it-btn-light" href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20need%20graphic%20design%20services." target="_blank" rel="noopener noreferrer" data-service="Graphic Design">Enquire on WhatsApp ↗</a><a class="it-btn it-btn-ghost" href="../index.html">Return to website</a></div><p class="it-contact-note">We will discuss the design requirements and deliverables.</p></div></section>
-</main>
-<footer class="it-footer"><a class="it-brand" href="../index.html"><span class="it-brand-icon">S</span><span>SulTech <span class="it-gradient-text">Solutions</span></span></a><p>Practical digital and technology solutions for your next step.</p><p class="it-footer-copy">© <span id="it-year"></span> SulTech Solutions. All rights reserved.</p></footer>
-<a class="it-whatsapp" href="https://wa.me/254708189577" target="_blank" rel="noopener noreferrer" aria-label="Contact SulTech Solutions on WhatsApp"><span>◉</span><span class="it-whatsapp-label">Chat on WhatsApp</span></a>
-<script src="service-pages.js"></script></body></html>
+
+<body class="it-page gd-page">
+  <header class="it-header">
+    <nav class="it-nav">
+      <a class="it-brand" href="../index.html">
+        <span class="it-brand-icon">S</span>
+        <span>SulTech <span class="it-gradient-text">Solutions</span></span>
+      </a>
+      <div class="it-nav-actions">
+        <a class="it-back-link" href="../index.html">← Back Home</a>
+        <a class="it-btn it-btn-small" href="#it-contact">Get in touch ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gd-hero">
+      <div class="gd-wrap gd-hero-grid">
+        <div>
+          <p class="gd-eyebrow"><span class="gd-dot"></span> DESIGNS THAT COMMUNICATE</p>
+          <h1>Make your ideas <span class="it-gradient-text">stand out.</span></h1>
+          <p class="gd-hero-copy">
+            Eye-catching designs for businesses, events, promotions and social media —
+            created to communicate your message clearly.
+          </p>
+          <div class="gd-actions">
+            <a class="it-btn" href="#it-contact">Start a Design ↗</a>
+            <a class="it-btn it-btn-ghost" href="#gd-services">View Services ↓</a>
+          </div>
+          <p class="gd-trust">✓ Creative layouts &nbsp; · &nbsp; ✓ Clear messaging &nbsp; · &nbsp; ✓ Print or digital</p>
+        </div>
+
+        <div class="gd-visual">
+          <img src="../images/GRAPHIC_DESIGN.jpg" alt="Graphic design samples by SulTech Solutions">
+          <div class="gd-image-tag">
+            <span>
+              <strong>Creative design. Clear message.</strong>
+              <small>Digital and print artwork</small>
+            </span>
+            <span class="gd-image-tag-icon">✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gd-strip" aria-label="Graphic design services">
+      <span>Flyers & Posters</span>
+      <span>Business Cards</span>
+      <span>Social Media</span>
+      <span>Print-Ready Artwork</span>
+    </div>
+
+    <section class="gd-section" id="gd-services">
+      <div class="gd-wrap">
+        <div class="gd-heading">
+          <p class="gd-label">WHAT WE DESIGN</p>
+          <h2>Design services for your next idea</h2>
+          <p>Choose what you need, then contact us to discuss the details.</p>
+        </div>
+
+        <div class="gd-services">
+          <article class="gd-card">
+            <div class="gd-card-top"><span class="gd-icon">▧</span><span class="gd-number">01</span></div>
+            <h3>Flyers & Posters</h3>
+            <p>Promotions, events, announcements and campaigns.</p>
+            <a href="#it-contact" data-service="Flyer and Poster Design">Enquire ↗</a>
+          </article>
+
+          <article class="gd-card">
+            <div class="gd-card-top"><span class="gd-icon">▤</span><span class="gd-number">02</span></div>
+            <h3>Business Cards</h3>
+            <p>Professional cards and branded stationery.</p>
+            <a href="#it-contact" data-service="Business Card Design">Enquire ↗</a>
+          </article>
+
+          <article class="gd-card">
+            <div class="gd-card-top"><span class="gd-icon">◎</span><span class="gd-number">03</span></div>
+            <h3>Social Media</h3>
+            <p>Posts and promotional graphics for your platforms.</p>
+            <a href="#it-contact" data-service="Social Media Design">Enquire ↗</a>
+          </article>
+
+          <article class="gd-card">
+            <div class="gd-card-top"><span class="gd-icon">▣</span><span class="gd-number">04</span></div>
+            <h3>Print-Ready Artwork</h3>
+            <p>Artwork prepared to your required dimensions.</p>
+            <a href="#it-contact" data-service="Print Ready Artwork">Enquire ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gd-process-section">
+      <div class="gd-wrap gd-process-panel">
+        <div class="gd-process-heading">
+          <p class="gd-label">HOW IT WORKS</p>
+          <h2>Simple from start to finish</h2>
+        </div>
+        <div class="gd-process-grid">
+          <article class="gd-step">
+            <span class="gd-step-number">01</span>
+            <div><h3>Share your idea</h3><p>Send your text, logo, size and references.</p></div>
+          </article>
+          <article class="gd-step">
+            <span class="gd-step-number">02</span>
+            <div><h3>Review the design</h3><p>Check the artwork and share your feedback.</p></div>
+          </article>
+          <article class="gd-step">
+            <span class="gd-step-number">03</span>
+            <div><h3>Get your files</h3><p>Receive the agreed digital or print files.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gd-wrap" id="it-contact">
+      <div class="gd-contact">
+        <p class="gd-label">LET'S CREATE</p>
+        <h2>Have a design in mind?</h2>
+        <p>Tell us what you need, and let's discuss your project.</p>
+        <a class="it-btn" href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20need%20graphic%20design%20services." target="_blank" rel="noopener noreferrer" data-service="Graphic Design">
+          Enquire on WhatsApp ↗
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="gd-footer">
+    <a class="it-brand" href="../index.html">
+      <span class="it-brand-icon">S</span>
+      <span>SulTech <span class="it-gradient-text">Solutions</span></span>
+    </a>
+    <p>Practical digital and technology solutions.</p>
+    <p>© <span id="it-year"></span> SulTech Solutions. All rights reserved.</p>
+  </footer>
+
+  <a class="it-whatsapp" href="https://wa.me/254708189577" target="_blank" rel="noopener noreferrer" aria-label="Contact SulTech Solutions on WhatsApp">
+    <span>◉</span><span class="it-whatsapp-label">Chat on WhatsApp</span>
+  </a>
+
+  <script src="service-pages.js"></script>
+</body>
+</html>
