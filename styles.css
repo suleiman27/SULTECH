@@ -473,3 +473,90 @@ body.dark-mode .gallery-item {
         gap: 10px;
     }
 }
+
+/* ========================================
+   SULTECH SERVICE PAGES — READABILITY FIX
+======================================== */
+
+.it-page {
+    background-color: #0b1220;
+    color: #f1f5f9;
+}
+
+/* Main headings */
+.it-page h1,
+.it-page h2,
+.it-page h3,
+.it-page h4 {
+    color: #f8fafc;
+}
+
+/* Paragraphs and general content */
+.it-page p,
+.it-page li,
+.it-page .it-hero-description,
+.it-page .it-benefit,
+.it-page .it-process-step p,
+.it-page .it-faq-item p {
+    color: #dbe4f0;
+    line-height: 1.75;
+}
+
+/* Small labels and supporting text */
+.it-page .it-eyebrow,
+.it-page .it-section-label,
+.it-page .it-visual-caption,
+.it-page .it-trust-line {
+    color: #cbd5e1;
+}
+
+/* Service cards */
+.it-page .it-service-card,
+.it-page .it-process-step,
+.it-page .it-faq-item {
+    color: #f1f5f9;
+}
+
+.it-page .it-service-card p,
+.it-page .it-process-step p {
+    color: #cbd5e1;
+}
+
+/* FAQ text */
+.it-page .it-faq-item summary {
+    color: #f8fafc;
+    cursor: pointer;
+}
+
+.it-page .it-faq-item p {
+    color: #dbe4f0;
+}
+
+/* Links */
+.it-page a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.it-page a:focus-visible,
+.it-page button:focus-visible {
+    outline: 3px solid #38bdf8;
+    outline-offset: 3px;
+}
+
+/* Footer readability */
+.it-page .it-footer,
+.it-page .it-footer p,
+.it-page .it-footer a {
+    color: #cbd5e1;
+}
+
+/* Keep the main text visible */
+.it-page .it-hero-copy,
+.it-page .it-section-heading,
+.it-page .it-why-copy,
+.it-page .it-faq-intro,
+.it-page .it-contact-content {
+    opacity: 1;
+    visibility: visible;
+}
