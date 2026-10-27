@@ -1,22 +1,30 @@
-/* ==================================================
+
+/* =========================================================
    SULTECH SOLUTIONS — SHARED SERVICE PAGE STYLES
+   Light, modern, readable and responsive design
    Used by IT Support and all other service mini-pages
-================================================== */
+========================================================= */
+
+/* ===================== 1. COLOUR SYSTEM ===================== */
 
 .it-page {
-  --it-bg: #07111f;
-  --it-bg-soft: #0b1829;
-  --it-card: #101f33;
-  --it-blue: #4388ff;
-  --it-cyan: #50e3e6;
-  --it-text: #f3f7ff;
-  --it-muted: #a4b2c8;
-  --it-border: rgba(160, 190, 230, 0.15);
+  --it-bg: #f4f7fc;
+  --it-bg-soft: #eaf0f9;
+  --it-card: #ffffff;
+  --it-blue: #2563eb;
+  --it-cyan: #0891b2;
+  --it-text: #17243a;
+  --it-muted: #526176;
+  --it-border: #dce5f0;
+  --it-heading: #10213b;
+  --it-shadow: 0 10px 28px rgba(24, 48, 82, 0.08);
 
   margin: 0;
+  min-height: 100vh;
   background: var(--it-bg);
   color: var(--it-text);
   font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
   line-height: 1.65;
   overflow-x: hidden;
 }
@@ -32,27 +40,48 @@
 }
 
 .it-page img {
+  display: block;
   max-width: 100%;
+}
+
+.it-page h1,
+.it-page h2,
+.it-page h3,
+.it-page h4 {
+  color: var(--it-heading);
+  line-height: 1.25;
+}
+
+.it-page p {
+  color: var(--it-muted);
 }
 
 .it-page section[id] {
   scroll-margin-top: 95px;
 }
 
-/* HEADER */
+.it-page button,
+.it-page input,
+.it-page textarea,
+.it-page select {
+  font: inherit;
+}
+
+/* ===================== 2. HEADER ===================== */
 
 .it-header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(7, 17, 31, 0.93);
-  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(15px);
   border-bottom: 1px solid var(--it-border);
+  box-shadow: 0 3px 15px rgba(24, 48, 82, 0.04);
 }
 
 .it-nav {
   width: min(1200px, 92%);
-  min-height: 76px;
+  min-height: 72px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -64,33 +93,770 @@
   display: inline-flex;
   align-items: center;
   gap: 11px;
-  color: var(--it-text);
-  font-size: 1.1rem;
-  font-weight: 750;
+  color: var(--it-heading);
+  font-size: 1.08rem;
+  font-weight: 800;
   letter-spacing: -0.4px;
 }
 
 .it-brand strong {
-  color: var(--it-cyan);
+  color: var(--it-blue);
 }
 
 .it-brand-icon {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   display: grid;
   place-items: center;
   border-radius: 12px;
   background: linear-gradient(135deg, var(--it-blue), var(--it-cyan));
-  color: #061323;
+  color: #ffffff;
   font-size: 1.35rem;
   font-weight: 900;
+  box-shadow: 0 5px 13px rgba(37, 99, 235, 0.2);
 }
 
 .it-nav-actions {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 22px;
 }
 
 .it-back-link {
   color: var(--it-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.it-back-link:hover {
+  color: var(--it-blue);
+}
+
+/* ===================== 3. BUTTONS ===================== */
+
+.it-page .it-btn,
+.it-page .it-button,
+.it-page .it-contact-section a,
+.it-page .it-contact-section button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 21px;
+  border: 1px solid var(--it-blue);
+  border-radius: 9px;
+  background: var(--it-blue);
+  color: #ffffff;
+  font-weight: 750;
+  cursor: pointer;
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease,
+              background 0.2s ease;
+}
+
+.it-page .it-btn:hover,
+.it-page .it-button:hover,
+.it-page .it-contact-section a:hover,
+.it-page .it-contact-section button:hover {
+  background: #174fc5;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
+}
+
+/* ===================== 4. HERO SECTION ===================== */
+
+.it-page .it-hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 90% 10%,
+      rgba(37, 99, 235, 0.10),
+      transparent 34%
+    ),
+    linear-gradient(135deg, #ffffff, #edf4ff);
+  border-bottom: 1px solid var(--it-border);
+}
+
+.it-page .it-hero::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  right: -110px;
+  bottom: -160px;
+  border: 1px solid rgba(37, 99, 235, 0.14);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 30px rgba(37, 99, 235, 0.035),
+    0 0 0 65px rgba(8, 145, 178, 0.035);
+  pointer-events: none;
+}
+
+.it-page .it-hero-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1120px, 92%);
+  margin: auto;
+  padding: 42px 0;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 42px;
+}
+
+.it-page .it-hero h1 {
+  margin: 12px 0 17px;
+  color: var(--it-heading);
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.it-page .it-hero h1 span {
+  color: var(--it-blue);
+}
+
+.it-page .it-hero p {
+  margin: 0 0 18px;
+  color: #46566d;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.it-page .it-hero .it-eyebrow,
+.it-page .it-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1755b9;
+  font-size: 0.77rem;
+  font-weight: 850;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.it-page .it-image-frame {
+  position: relative;
+  min-height: 270px;
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  border-radius: 20px;
+  background: #e3ebf7;
+  box-shadow: 0 18px 42px rgba(24, 48, 82, 0.14);
+}
+
+.it-page .it-image-frame img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.it-page .it-hero img {
+  max-width: 100%;
+}
+
+/* ===================== 5. SMALL HIGHLIGHTS ===================== */
+
+.it-page .it-hero-points,
+.it-page .it-feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-top: 20px;
+}
+
+.it-page .it-hero-points span,
+.it-page .it-feature-list span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #34445b;
+  font-size: 0.85rem;
+  font-weight: 650;
+}
+
+.it-page .it-hero-points span::before,
+.it-page .it-feature-list span::before {
+  content: "✓";
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #d8f5e7;
+  color: #087443;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+/* ===================== 6. GENERAL SECTIONS ===================== */
+
+.it-page .it-section {
+  width: min(1120px, 92%);
+  margin: auto;
+  padding: 38px 0;
+}
+
+.it-page .it-section-heading {
+  margin-bottom: 25px;
+}
+
+.it-page .it-section-heading h2,
+.it-page .it-why-copy h2,
+.it-page .it-faq-intro h2 {
+  margin: 0 0 12px;
+  color: var(--it-heading);
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  letter-spacing: -0.6px;
+}
+
+.it-page .it-section-heading h2::after,
+.it-page .it-why-copy h2::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 4px;
+  margin-top: 12px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, var(--it-blue), var(--it-cyan));
+}
+
+.it-page .it-section-heading > p {
+  max-width: 650px;
+  margin: 12px 0 0;
+  font-size: 0.94rem;
+}
+
+.it-page .it-section:nth-of-type(even) {
+  background: transparent;
+}
+
+/* ===================== 7. SERVICE CARDS ===================== */
+
+.it-page .it-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.it-page .it-service-card {
+  position: relative;
+  overflow: hidden;
+  padding: 22px;
+  border: 1px solid var(--it-border);
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: var(--it-shadow);
+  transition: transform 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.it-page .it-service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--it-blue), var(--it-cyan));
+}
+
+.it-page .it-service-card:hover {
+  transform: translateY(-5px);
+  border-color: #a9c7f5;
+  box-shadow: 0 17px 35px rgba(24, 48, 82, 0.12);
+}
+
+.it-page .it-service-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.it-page .it-service-icon {
+  width: 49px;
+  height: 49px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #d8e6ff;
+  border-radius: 13px;
+  background: #edf4ff;
+  color: var(--it-blue);
+  font-size: 1.55rem;
+}
+
+.it-page .it-service-number {
+  color: #8a9ab0;
+  font-size: 0.8rem;
+  font-weight: 850;
+}
+
+.it-page .it-service-card h3 {
+  margin: 0 0 10px;
+  color: var(--it-heading);
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.it-page .it-service-card p {
+  margin: 0 0 16px;
+  color: #526176;
+  font-size: 0.89rem;
+  line-height: 1.75;
+}
+
+.it-page .it-card-link,
+.it-page .it-text-link {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #175bd0;
+  font-size: 0.87rem;
+  font-weight: 800;
+}
+
+.it-page .it-card-link span,
+.it-page .it-text-link span {
+  transition: transform 0.2s ease;
+}
+
+.it-page .it-card-link:hover span,
+.it-page .it-text-link:hover span {
+  transform: translateX(4px);
+}
+
+/* ===================== 8. WHY CHOOSE US ===================== */
+
+.it-page .it-why-section {
+  padding: 42px 0;
+  border-top: 1px solid var(--it-border);
+  border-bottom: 1px solid var(--it-border);
+  background: linear-gradient(135deg, #edf4ff, #f8fbff);
+}
+
+.it-page .it-why-inner {
+  width: min(1120px, 92%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 38px;
+}
+
+.it-page .it-why-visual {
+  position: relative;
+  padding: 14px;
+  border: 1px solid var(--it-border);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: var(--it-shadow);
+}
+
+.it-page .it-why-visual img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.it-page .it-why-copy h2 {
+  margin-bottom: 16px;
+}
+
+.it-page .it-why-copy p {
+  color: #526176;
+  font-size: 0.93rem;
+}
+
+.it-page .it-why-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.it-page .it-why-list > div {
+  padding: 14px;
+  border: 1px solid var(--it-border);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.it-page .it-why-list h3 {
+  margin: 0 0 5px;
+  color: var(--it-heading);
+  font-size: 0.94rem;
+}
+
+.it-page .it-why-list p {
+  margin: 0;
+  font-size: 0.82rem;
+}
+
+/* ===================== 9. PROCESS STEPS ===================== */
+
+.it-page .it-process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.it-page .it-process-step {
+  padding: 21px;
+  border: 1px solid var(--it-border);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(24, 48, 82, 0.05);
+}
+
+.it-page .it-process-number {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--it-blue), var(--it-cyan));
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.05rem;
+}
+
+.it-page .it-process-step h3 {
+  margin: 0 0 8px;
+  color: var(--it-heading);
+  font-size: 1rem;
+}
+
+.it-page .it-process-step p {
+  margin: 0;
+  color: #526176;
+  font-size: 0.88rem;
+}
+
+/* ===================== 10. FAQ ===================== */
+
+.it-page .it-faq-section {
+  padding: 40px 0;
+  background: #edf3fb;
+  border-top: 1px solid var(--it-border);
+}
+
+.it-page .it-faq-layout {
+  width: min(1120px, 92%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: start;
+  gap: 32px;
+}
+
+.it-page .it-faq-intro p {
+  color: #526176;
+}
+
+.it-page .it-faq-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid #d9e3f0;
+  border-radius: 11px;
+  background: #ffffff;
+  box-shadow: 0 3px 12px rgba(24, 48, 82, 0.035);
+}
+
+.it-page .it-faq-item summary {
+  padding: 14px 16px;
+  color: var(--it-heading);
+  font-size: 0.91rem;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.it-page .it-faq-item summary::marker {
+  color: var(--it-blue);
+}
+
+.it-page .it-faq-item p {
+  padding: 0 16px 15px;
+  margin: 0;
+  color: #526176;
+  font-size: 0.88rem;
+}
+
+/* ===================== 11. CONTACT CTA ===================== */
+
+.it-page .it-contact-section {
+  width: min(1120px, 92%);
+  margin: 30px auto;
+  padding: 34px 22px;
+  border: 1px solid #c9dcfa;
+  border-radius: 19px;
+  background:
+    radial-gradient(circle at top right, #dbeafe, transparent 45%),
+    linear-gradient(135deg, #ffffff, #eef5ff);
+  box-shadow: var(--it-shadow);
+  text-align: center;
+}
+
+.it-page .it-contact-content {
+  max-width: 720px;
+  margin: auto;
+}
+
+.it-page .it-contact-content h2 {
+  margin: 0 0 12px;
+  color: var(--it-heading);
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  line-height: 1.25;
+}
+
+.it-page .it-contact-content > p {
+  margin: 0 auto 20px;
+  color: #526176;
+}
+
+.it-page .it-contact-content a,
+.it-page .it-contact-content button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 5px;
+  padding: 12px 20px;
+  border: 1px solid var(--it-blue);
+  border-radius: 9px;
+  background: var(--it-blue);
+  color: #ffffff;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.it-page .it-contact-content a:hover,
+.it-page .it-contact-content button:hover {
+  background: #174fc5;
+  color: #ffffff;
+}
+
+/* ===================== 12. FOOTER ===================== */
+
+.it-page .it-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 22px max(4%, calc((100% - 1120px) / 2));
+  border-top: 1px solid var(--it-border);
+  background: #ffffff;
+  color: #526176;
+  font-size: 0.85rem;
+}
+
+.it-page .it-footer p {
+  margin: 0;
+  color: #526176;
+}
+
+.it-page .it-footer a {
+  color: #175bd0;
+  font-weight: 700;
+}
+
+/* ===================== 13. FLOATING WHATSAPP ===================== */
+
+.it-page .it-whatsapp {
+  position: fixed;
+  z-index: 999;
+  right: 22px;
+  bottom: 22px;
+  width: 53px;
+  height: 53px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 1.6rem;
+  box-shadow: 0 8px 22px rgba(22, 163, 74, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.it-page .it-whatsapp:hover {
+  transform: translateY(-4px);
+  color: #ffffff;
+}
+
+/* ===================== 14. CONTENT VISIBILITY ===================== */
+
+/* Keep text readable even when reveal JavaScript fails. */
+.it-page .it-reveal,
+.it-page .it-reveal.it-visible,
+.it-page .it-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* Override common dark-theme text colours within page content. */
+.it-page .it-hero h1,
+.it-page .it-section h2,
+.it-page .it-section h3,
+.it-page .it-why-copy h2,
+.it-page .it-why-copy h3,
+.it-page .it-faq-intro h2,
+.it-page .it-faq-item summary,
+.it-page .it-contact-content h2 {
+  color: var(--it-heading);
+}
+
+.it-page .it-section p,
+.it-page .it-why-copy p,
+.it-page .it-faq-item p,
+.it-page .it-contact-content > p {
+  color: var(--it-muted);
+}
+
+/* ===================== 15. TABLETS ===================== */
+
+@media (max-width: 900px) {
+  .it-page .it-hero-inner {
+    gap: 25px;
+  }
+
+  .it-page .it-service-grid,
+  .it-page .it-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .it-page .it-why-inner {
+    gap: 25px;
+  }
+
+  .it-page .it-faq-layout {
+    gap: 22px;
+  }
+}
+
+/* ===================== 16. MOBILE ===================== */
+
+@media (max-width: 650px) {
+  .it-nav {
+    min-height: 65px;
+    gap: 12px;
+  }
+
+  .it-brand {
+    gap: 8px;
+    font-size: 0.94rem;
+  }
+
+  .it-brand-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .it-nav-actions {
+    gap: 10px;
+  }
+
+  .it-back-link {
+    font-size: 0.82rem;
+  }
+
+  .it-page .it-hero-inner {
+    grid-template-columns: 1fr;
+    padding: 28px 0;
+    gap: 22px;
+  }
+
+  .it-page .it-hero h1 {
+    font-size: clamp(2rem, 9vw, 2.7rem);
+    letter-spacing: -0.8px;
+  }
+
+  .it-page .it-image-frame {
+    min-height: 190px;
+    max-height: 270px;
+  }
+
+  .it-page .it-image-frame img {
+    min-height: 190px;
+    max-height: 270px;
+  }
+
+  .it-page .it-section,
+  .it-page .it-why-section,
+  .it-page .it-faq-section {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .it-page .it-section-heading {
+    margin-bottom: 19px;
+  }
+
+  .it-page .it-service-grid,
+  .it-page .it-process-grid,
+  .it-page .it-why-inner,
+  .it-page .it-faq-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .it-page .it-service-card {
+    padding: 20px;
+  }
+
+  .it-page .it-why-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .it-page .it-contact-section {
+    margin: 20px auto;
+    padding: 27px 17px;
+  }
+
+  .it-page .it-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 5%;
+    gap: 9px;
+  }
+
+  .it-page .it-whatsapp {
+    right: 14px;
+    bottom: 14px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 380px) {
+  .it-page .it-why-list {
+    grid-template-columns: 1fr;
+  }
+
+  .it-brand {
+    font-size: 0.83rem;
+  }
+}
+
+/* ===================== 17. ACCESSIBILITY ===================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .it-page *,
+  .it-page *::before,
+  .it-page *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
