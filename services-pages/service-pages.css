@@ -1,4 +1,3 @@
-```css
 /* ==================================================
    SULTECH SOLUTIONS — SHARED SERVICE PAGE STYLES
    Used by IT Support and all other service mini-pages
@@ -1232,53 +1231,324 @@
   }
 }
 
-/* FIX: Ensure service-page hero text is visible */
-.it-hero-copy,
-.it-hero-copy h1,
-.it-hero-copy p,
-.it-hero-copy .it-eyebrow,
-.it-hero-copy .it-gradient-text,
-.it-hero-description,
-.it-hero-buttons,
-.it-trust-line {
-    visibility: visible !important;
-    opacity: 1 !important;
-    color: inherit;
+
+/* ==================================================
+   SULTECH SOLUTIONS — VISIBILITY + COMPACT LAYOUT FIX
+   Shared by all service mini-pages
+================================================== */
+
+/* Keep all content readable even if the reveal script fails.
+   This intentionally disables scroll-reveal hiding so text
+   cannot remain invisible. */
+.it-page .it-reveal,
+.it-page .it-reveal.it-visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
 }
 
-.it-hero-copy {
-    display: block !important;
-    position: relative;
-    z-index: 5;
+/* Reliable contrast */
+.it-page {
+  color: #e5edf8;
+  background: #07111f;
 }
 
-.it-hero-copy h1 {
-    display: block !important;
-    color: #ffffff;
+.it-page p,
+.it-page li,
+.it-page .it-hero-description,
+.it-page .it-section-heading > p,
+.it-page .it-why-copy > p,
+.it-page .it-benefit,
+.it-page .it-benefit p,
+.it-page .it-process-step p,
+.it-page .it-faq-item p,
+.it-page .it-faq-intro > p,
+.it-page .it-visual-caption,
+.it-page .it-trust-line {
+  color: #d0dced;
 }
 
-.it-hero-copy p,
-.it-hero-description {
-    display: block !important;
-    color: #d1d5db;
-    line-height: 1.7;
+.it-page h1,
+.it-page h2,
+.it-page h3,
+.it-page h4,
+.it-page .it-faq-item summary {
+  color: #f8fbff;
 }
 
-.it-hero-buttons {
-    display: flex !important;
-    flex-wrap: wrap;
-    gap: 12px;
+.it-page .it-eyebrow,
+.it-page .it-section-label,
+.it-page .it-card-link,
+.it-page .it-text-link {
+  color: #65e6e6;
 }
 
-.it-eyebrow,
-.it-trust-line {
-    display: block !important;
+/* Reduce the large gaps that made pages excessively long */
+.it-page .it-hero-inner {
+  min-height: 0;
+  padding: 36px 0 32px;
+  gap: 32px;
 }
 
-@media (max-width: 768px) {
-    .it-hero-copy {
-        display: block !important;
-        width: 100%;
-    }
+.it-page .it-hero h1 {
+  font-size: clamp(2.15rem, 4vw, 3.5rem);
+  line-height: 1.12;
+  letter-spacing: -1.2px;
 }
 
+.it-page .it-eyebrow {
+  margin-bottom: 12px;
+}
+
+.it-page .it-hero-description {
+  margin: 15px 0 18px;
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.it-page .it-trust-line {
+  margin-top: 16px;
+}
+
+.it-page .it-image-frame {
+  min-height: 300px;
+  max-height: 360px;
+}
+
+.it-page .it-visual-caption {
+  margin-top: 10px;
+}
+
+.it-page .it-hero-bottom {
+  padding: 10px 0;
+}
+
+.it-page .it-quick-strip > div {
+  padding: 13px 10px;
+}
+
+.it-page .it-section {
+  padding: 42px 0;
+}
+
+.it-page .it-section-heading {
+  margin-bottom: 22px;
+  gap: 24px;
+}
+
+.it-page .it-section-label {
+  margin-bottom: 9px;
+}
+
+.it-page .it-section-heading h2,
+.it-page .it-why-copy h2,
+.it-page .it-faq-intro h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  letter-spacing: -0.7px;
+}
+
+.it-page .it-service-grid {
+  gap: 14px;
+}
+
+.it-page .it-service-card {
+  padding: 20px;
+}
+
+.it-page .it-service-top {
+  margin-bottom: 14px;
+}
+
+.it-page .it-service-icon {
+  width: 42px;
+  height: 42px;
+  font-size: 1.35rem;
+}
+
+.it-page .it-service-card h3 {
+  margin-bottom: 8px;
+}
+
+.it-page .it-service-card p {
+  min-height: 0;
+  margin-bottom: 12px;
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.it-page .it-why-section {
+  padding: 42px 0;
+}
+
+.it-page .it-why-inner {
+  gap: 36px;
+}
+
+.it-page .it-why-visual {
+  padding: 12px;
+}
+
+.it-page .it-terminal-content {
+  padding: 20px;
+}
+
+.it-page .it-why-copy h2 {
+  margin-bottom: 12px;
+}
+
+.it-page .it-why-copy > p {
+  margin-bottom: 16px;
+  line-height: 1.65;
+}
+
+.it-page .it-benefit {
+  margin: 12px 0;
+}
+
+.it-page .it-process-step {
+  padding: 20px;
+}
+
+.it-page .it-process-number {
+  margin-bottom: 12px;
+}
+
+.it-page .it-process-step p {
+  line-height: 1.6;
+}
+
+.it-page .it-faq-section {
+  padding: 42px 0;
+}
+
+.it-page .it-faq-layout {
+  gap: 36px;
+}
+
+.it-page .it-faq-item summary {
+  padding: 14px 0;
+}
+
+.it-page .it-faq-item p {
+  margin-bottom: 14px;
+  line-height: 1.65;
+}
+
+.it-page .it-contact-section {
+  padding: 48px 20px;
+}
+
+.it-page .it-contact-content h2 {
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  letter-spacing: -0.8px;
+}
+
+.it-page .it-contact-content > p {
+  margin: 14px auto 20px;
+  line-height: 1.65;
+}
+
+.it-page .it-btn {
+  padding: 11px 16px;
+}
+
+.it-page .it-footer {
+  padding: 20px 4%;
+}
+
+/* Back Home stays an ordinary same-tab link */
+.it-page .it-nav-actions {
+  gap: 16px;
+}
+
+.it-page .it-back-link {
+  color: #d0dced;
+}
+
+/* Responsive layout */
+@media (max-width: 1000px) {
+  .it-page .it-hero-inner {
+    min-height: 0;
+    padding: 32px 0;
+    gap: 24px;
+  }
+
+  .it-page .it-image-frame {
+    min-height: 260px;
+  }
+
+  .it-page .it-why-inner,
+  .it-page .it-faq-layout {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 700px) {
+  .it-page .it-hero-inner {
+    grid-template-columns: 1fr;
+    padding: 30px 0 24px;
+    gap: 22px;
+  }
+
+  .it-page .it-hero h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+    letter-spacing: -0.8px;
+  }
+
+  .it-page .it-image-frame {
+    min-height: 230px;
+    max-height: 280px;
+  }
+
+  .it-page .it-section,
+  .it-page .it-why-section,
+  .it-page .it-faq-section {
+    padding: 30px 0;
+  }
+
+  .it-page .it-section-heading {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .it-page .it-section-heading > p {
+    margin-top: 10px;
+  }
+
+  .it-page .it-service-grid,
+  .it-page .it-process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .it-page .it-service-card {
+    padding: 18px;
+  }
+
+  .it-page .it-why-inner,
+  .it-page .it-faq-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .it-page .it-contact-section {
+    padding: 38px 18px;
+  }
+
+  .it-page .it-footer {
+    padding: 20px 5%;
+  }
+
+  .it-page .it-nav-actions {
+    gap: 10px;
+  }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .it-page *,
+  .it-page *::before,
+  .it-page *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
