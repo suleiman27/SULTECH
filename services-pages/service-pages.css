@@ -860,3 +860,61 @@
     scroll-behavior: auto !important;
   }
 }
+
+
+/* WEBSITE PORTFOLIO */
+#it-portfolio {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+#it-portfolio .it-section-heading {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+#it-portfolio .it-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+#it-portfolio .it-portfolio-card {
+    display: block;
+    min-width: 0;
+    padding: 16px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+#it-portfolio .it-portfolio-card a {
+    display: block;
+    width: 100%;
+}
+
+#it-portfolio .it-portfolio-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#it-portfolio .it-portfolio-card h3 {
+    margin: 14px 0 0;
+}
+
+@media (max-width: 600px) {
+    #it-portfolio .it-portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #it-portfolio .it-portfolio-card img {
+        height: 210px;
+    }
+}
