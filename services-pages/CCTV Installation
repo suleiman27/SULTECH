@@ -231,6 +231,72 @@
     </div>
   </section>
 
+<!-- CCTV IMAGE GALLERY -->
+<section class="it-section" id="cctv-gallery">
+
+  <div class="it-section-heading it-reveal">
+    <p class="it-section-label">OUR SECURITY SOLUTIONS</p>
+    <h2>Smart Security for <span class="it-gradient-text">Every Space</span></h2>
+    <p>
+      Explore CCTV solutions designed to help protect homes,
+      offices, shops and business premises.
+    </p>
+  </div>
+
+  <div class="cctv-gallery-grid">
+
+    <div class="cctv-gallery-item it-reveal">
+      <img
+        src="../images/cctv-camera.jpg"
+        alt="Outdoor CCTV security camera installation"
+        loading="lazy"
+      >
+      <div class="cctv-gallery-caption">
+        <h3>Outdoor CCTV Cameras</h3>
+        <p>Monitor entrances, parking areas and outdoor spaces.</p>
+      </div>
+    </div>
+
+    <div class="cctv-gallery-item it-reveal">
+      <img
+        src="../images/cctv-installation.jpg"
+        alt="Professional CCTV camera installation indoors"
+        loading="lazy"
+      >
+      <div class="cctv-gallery-caption">
+        <h3>Professional Installation</h3>
+        <p>Camera placement planned around your property's needs.</p>
+      </div>
+    </div>
+
+    <div class="cctv-gallery-item it-reveal">
+      <img
+        src="../images/cctv-mobile-view.jpg"
+        alt="Remote CCTV camera monitoring on a mobile phone"
+        loading="lazy"
+      >
+      <div class="cctv-gallery-caption">
+        <h3>Remote Monitoring</h3>
+        <p>View supported cameras remotely using a compatible device.</p>
+      </div>
+    </div>
+
+    <div class="cctv-gallery-item it-reveal">
+      <img
+        src="../images/cctv-monitoring-system.jpg"
+        alt="CCTV recording equipment and security monitor"
+        loading="lazy"
+      >
+      <div class="cctv-gallery-caption">
+        <h3>Recording Systems</h3>
+        <p>Recording and playback options to suit your security setup.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
   <!-- WHY CCTV -->
   <section class="it-section it-why-section">
 
