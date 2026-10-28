@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Professional CCTV installation, security camera setup, remote viewing and maintenance by SulTech Solutions. Protect your home and business with smarter surveillance.">
+
+  <meta name="theme-color" content="#071b16">
+  <title>CCTV Installation & Security Systems | SulTech Solutions</title>
+
+  <link rel="stylesheet" href="service-pages.css">
+</head>
+
+<body class="it-page">
+
+<!-- HEADER -->
+<header class="it-header">
+  <nav class="it-nav">
+    <a class="it-brand" href="../index.html">
+      <span class="it-brand-icon">S</span>
+      <span>SulTech <span class="it-gradient-text">Solutions</span></span>
+    </a>
+
+    <div class="it-nav-actions">
+      <a class="it-back-link" href="../index.html">← Back Home</a>
+      <a class="it-btn it-btn-small" href="#it-contact">Get a Quote ↗</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="it-hero">
+    <div class="it-hero-glow it-glow-one"></div>
+    <div class="it-hero-glow it-glow-two"></div>
+
+    <div class="it-hero-inner">
+
+      <div class="it-hero-copy it-reveal">
+        <p class="it-eyebrow">
+          <span class="it-status-dot"></span>
+          SMARTER SECURITY STARTS HERE
+        </p>
+
+        <h1>
+          See More. Feel Safer.
+          <span class="it-gradient-text">Stay Connected.</span>
+        </h1>
+
+        <p class="it-hero-description">
+          Keep an eye on what matters with professionally planned CCTV
+          solutions for homes, shops, offices, apartments and other
+          business premises. From camera placement to remote viewing,
+          we help you build a surveillance system that suits your needs.
+        </p>
+
+        <div class="it-hero-buttons">
+          <a
+            class="it-btn"
+            href="#it-contact"
+            data-service="CCTV Installation"
+          >
+            Get a CCTV Quote ↗
+          </a>
+
+          <a class="it-btn it-btn-ghost" href="#it-services">
+            Explore Our Services ↓
+          </a>
+        </div>
+
+        <p class="it-trust-line">
+          ✓ Smart camera placement · Remote viewing options · Reliable setup
+        </p>
+      </div>
+
+      <div class="it-hero-visual it-reveal">
+        <div class="it-image-frame">
+          <img
+            class="it-hero-image"
+            src="../images/CCTV_INSTALLATION.jpg"
+            alt="CCTV security camera installation for a property"
+          >
+
+          <div class="it-image-overlay"></div>
+
+          <div class="it-floating-card it-card-top">
+            <span class="it-floating-icon">◉</span>
+            <span>
+              <strong>24/7 Surveillance Options</strong>
+              <small>Monitoring based on your setup</small>
+            </span>
+          </div>
+
+          <div class="it-floating-card it-card-bottom">
+            <span class="it-floating-icon">⌂</span>
+            <span>
+              <strong>Home & Business</strong>
+              <small>Security tailored to your space</small>
+            </span>
+          </div>
+        </div>
+
+        <p class="it-visual-caption">
+          SulTech Solutions
+          <span>— a clearer view of your security</span>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="it-hero-bottom"></div>
+  </section>
+
+  <!-- QUICK SERVICES -->
+  <section class="it-quick-strip">
+    <span>CCTV Installation</span>
+    <span>Indoor & Outdoor Cameras</span>
+    <span>Remote Viewing</span>
+    <span>Maintenance & Upgrades</span>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="it-section" id="it-services">
+
+    <div class="it-section-heading it-reveal">
+      <p class="it-section-label">OUR SECURITY SOLUTIONS</p>
+
+      <h2>
+        Security designed around
+        <span class="it-gradient-text">your space</span>
+      </h2>
+
+      <p>
+        Whether you're securing a family home or a busy workplace,
+        we help you choose and set up the right surveillance solution.
+      </p>
+    </div>
+
+    <div class="it-service-grid">
+
+      <article class="it-service-card it-reveal">
+        <div class="it-service-top">
+          <span class="it-service-icon">◉</span>
+          <span class="it-service-number">01</span>
+        </div>
+
+        <h3>CCTV Installation</h3>
+
+        <p>
+          Installation of suitable indoor and outdoor cameras for homes,
+          retail shops, offices, apartments, warehouses and other premises.
+        </p>
+
+        <a
+          class="it-card-link"
+          href="#it-contact"
+          data-service="CCTV Camera Installation"
+        >
+          Plan my installation ↗
+        </a>
+      </article>
+
+      <article class="it-service-card it-reveal">
+        <div class="it-service-top">
+          <span class="it-service-icon">⌕</span>
+          <span class="it-service-number">02</span>
+        </div>
+
+        <h3>Camera Planning & Setup</h3>
+
+        <p>
+          Assess important entry points, walkways and other areas to help
+          position cameras for useful coverage and reduce blind spots.
+        </p>
+
+        <a
+          class="it-card-link"
+          href="#it-contact"
+          data-service="CCTV Camera Planning"
+        >
+          Discuss my property ↗
+        </a>
+      </article>
+
+      <article class="it-service-card it-reveal">
+        <div class="it-service-top">
+          <span class="it-service-icon">⌘</span>
+          <span class="it-service-number">03</span>
+        </div>
+
+        <h3>Remote Viewing Setup</h3>
+
+        <p>
+          Where supported, configure mobile or computer access so you can
+          view your cameras remotely using a compatible app and network.
+        </p>
+
+        <a
+          class="it-card-link"
+          href="#it-contact"
+          data-service="CCTV Remote Viewing"
+        >
+          Explore remote access ↗
+        </a>
+      </article>
+
+      <article class="it-service-card it-reveal">
+        <div class="it-service-top">
+          <span class="it-service-icon">⚙</span>
+          <span class="it-service-number">04</span>
+        </div>
+
+        <h3>Maintenance & Upgrades</h3>
+
+        <p>
+          Get help checking camera connections, reviewing recording
+          settings, troubleshooting faults and upgrading existing systems.
+        </p>
+
+        <a
+          class="it-card-link"
+          href="#it-contact"
+          data-service="CCTV Maintenance and Upgrades"
+        >
+          Improve my system ↗
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- WHY CCTV -->
+  <section class="it-section it-why-section">
+
+    <div class="it-why-inner">
+
+      <div class="it-why-visual it-reveal">
+        <div class="it-tech-window">
+          <div class="it-window-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <small>SECURITY / SYSTEM STATUS</small>
+          </div>
+
+          <div class="it-terminal-content">
+            <p class="it-terminal-muted">// Your property, better monitored</p>
+
+            <p>
+              <span class="it-terminal-blue">system</span> =
+              <span class="it-terminal-green">"CCTV"</span>;
+            </p>
+
+            <p>
+              <span class="it-terminal-blue">features</span> = [
+            </p>
+
+            <p class="it-terminal-indent">
+              <span class="it-terminal-green">"live viewing"</span>,
+            </p>
+
+            <p class="it-terminal-indent">
+              <span class="it-terminal-green">"video recording"</span>,
+            </p>
+
+            <p class="it-terminal-indent">
+              <span class="it-terminal-green">"remote access"</span>
+            </p>
+
+            <p>];</p>
+
+            <p class="it-terminal-success">
+              ✓ Configuration depends on selected equipment
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="it-why-copy it-reveal">
+        <p class="it-section-label">WHY CONSIDER CCTV?</p>
+
+        <h2>
+          More visibility.
+          <span class="it-gradient-text">More confidence.</span>
+        </h2>
+
+        <p>
+          A well-planned camera system can help you monitor activity,
+          review incidents and keep a better eye on your property.
+        </p>
+
+        <ul class="it-benefit-list">
+
+          <li class="it-benefit">
+            <span>✓</span>
+            <span>
+              <strong>Monitor key areas</strong> such as entrances,
+              reception areas, corridors and parking spaces.
+            </span>
+          </li>
+
+          <li class="it-benefit">
+            <span>✓</span>
+            <span>
+              <strong>Review recorded footage</strong> when supported
+              by your cameras and recording equipment.
+            </span>
+          </li>
+
+          <li class="it-benefit">
+            <span>✓</span>
+            <span>
+              <strong>Check in remotely</strong> using compatible devices
+              and a suitable internet connection.
+            </span>
+          </li>
+
+          <li class="it-benefit">
+            <span>✓</span>
+            <span>
+              <strong>Choose a suitable setup</strong> based on your
+              property, budget and security priorities.
+            </span>
+          </li>
+
+        </ul>
+
+        <a
+          class="it-btn"
+          href="#it-contact"
+          data-service="CCTV Security Consultation"
+        >
+          Let's Plan Your Security ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="it-section">
+
+    <div class="it-section-heading it-reveal">
+      <p class="it-section-label">A SIMPLE PROCESS</p>
+
+      <h2>
+        From planning to
+        <span class="it-gradient-text">peace of mind</span>
+      </h2>
+
+      <p>
+        We start by understanding your property and the protection you need.
+      </p>
+    </div>
+
+    <div class="it-process-grid">
+
+      <article class="it-process-step it-reveal">
+        <span class="it-process-number">01</span>
+
+        <h3>Tell Us Your Needs</h3>
+
+        <p>
+          Share your property type, location, areas to monitor
+          and approximate budget.
+        </p>
+      </article>
+
+      <article class="it-process-step it-reveal">
+        <span class="it-process-number">02</span>
+
+        <h3>Plan Your Setup</h3>
+
+        <p>
+          Discuss camera types, quantity, placement, recording options,
+          installation requirements and costs.
+        </p>
+      </article>
+
+      <article class="it-process-step it-reveal">
+        <span class="it-process-number">03</span>
+
+        <h3>Install & Test</h3>
+
+        <p>
+          Agree on the installation, then check the supported camera
+          views, recording and remote access features.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="it-contact-section" id="it-contact">
+    <div class="it-contact-glow"></div>
+
+    <div class="it-contact-content it-reveal">
+
+      <p class="it-section-label">LET'S SECURE WHAT MATTERS</p>
+
+      <h2>
+        Ready to upgrade your property's security?
+      </h2>
+
+      <p>
+        Whether you need a new CCTV installation, extra cameras or help
+        with an existing system, let's discuss a solution that fits your needs.
+      </p>
+
+      <div class="it-hero-buttons">
+
+        <a
+          class="it-btn it-btn-light"
+          href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20am%20interested%20in%20CCTV%20installation.%20Please%20help%20me%20with%20a%20quotation."
+          target="_blank"
+          rel="noopener noreferrer"
+          data-service="CCTV Installation Quote"
+        >
+          Get a CCTV Quote on WhatsApp ↗
+        </a>
+
+        <a class="it-btn it-btn-ghost" href="../index.html">
+          Return to Website
+        </a>
+
+      </div>
+
+      <p class="it-contact-note">
+        Share your requirements for a quotation based on your property
+        and preferred equipment.
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="it-footer">
+
+  <a class="it-brand" href="../index.html">
+    <span class="it-brand-icon">S</span>
+    <span>SulTech <span class="it-gradient-text">Solutions</span></span>
+  </a>
+
+  <p>
+    Practical digital, technology and security solutions for your next step.
+  </p>
+
+  <p class="it-footer-copy">
+    © <span id="it-year"></span> SulTech Solutions. All rights reserved.
+  </p>
+
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a
+  class="it-whatsapp"
+  href="https://wa.me/254708189577?text=Hello%20SulTech%20Solutions%2C%20I%20need%20help%20with%20CCTV%20installation."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contact SulTech Solutions about CCTV installation on WhatsApp"
+>
+  <span>◉</span>
+  <span class="it-whatsapp-label">CCTV Enquiries</span>
+</a>
+
+<script src="service-pages.js"></script>
+
+</body>
+</html>
